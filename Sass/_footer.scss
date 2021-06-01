@@ -1,0 +1,67 @@
+.footer{
+    position: relative;
+    top: 30px;
+    background-color: $footer;
+    color: white;
+    
+
+    .col-md-4{
+        padding: 24px;
+        margin-top: 2rem;
+        text-align: center;
+
+        h3{
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+        }
+
+        p{
+            font-size: 1.4rem;
+        }
+    }
+
+    .col-12{
+        border-top: 3px solid #eee;
+        border-radius: 6px;
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    .footer-contact{
+
+        
+        .icons{
+            padding-left: 0;
+            li{
+                margin: 10px;
+                font-size: 2rem;
+                background: $icon-bg;
+                color: $icon;
+                width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+                padding-top: 1rem;
+                transition: all .15s ease-out;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            .fa-facebook-f:hover{
+                background-color: $facebook-bg;
+                color: $facebook;
+            }
+
+            .fa-telegram-plane:hover{
+                background-color: $telegram-bg;
+                color: $telegram;
+            }
+            .fa-twitter:hover{
+                color: $twitter;
+                background-color: $twitter-bg;
+            }
+        }
+    }
+
+
+}

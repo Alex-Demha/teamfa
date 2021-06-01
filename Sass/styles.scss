@@ -1,0 +1,15 @@
+// cursive (pattaya) font
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+// robotto font
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import 'variables';
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+@import 'navbar';
+@import 'header';
+@import 'footer';

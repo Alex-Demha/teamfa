@@ -1,0 +1,215 @@
+//NavBar----------------------------------------------------------------------------------------
+nav{
+// z-index that transitions when opened so that you can press button under it when its not opened.
+    transition: z-index .5s;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 64px;
+    background: #eee;
+    box-shadow: 0px 1px 4px #66666696;
+    
+    .cart{
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: #ddd;
+        border-radius: 1000px;
+        width: 4rem;
+        height: 4rem;
+        font-size: 1.6rem;
+        color: #222;
+        text-align: center;
+        padding-top: .8rem;
+        padding-right: .2rem;
+        position: fixed;
+        right: 17rem;
+        top: 1rem;
+    }
+    .nav-logo{
+        width: fit-content;
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        font-family: 'Pattaya', sans-serif;
+        font-size: 3rem;
+    }
+// the nav button is the three lines (hamburger menu) 
+    .nav-button{
+        position: absolute;
+        top: 6px;
+        left: 10px;
+        z-index: 100;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+    // removing default border and outline
+        border: none;
+        outline: none;
+
+    // styling the three lines 
+        .topLine, .middleLine, .bottomLine{
+            // adding gradient color to the lines instead of their background
+            background: $dark;
+            color: yellow;
+            position: relative;
+            display: block;
+            width: 40px;
+            height: 5px;
+            border-radius: 50px;
+            // used cubic-bezier to make the animation bouncy
+            transition: all cubic-bezier(.2, .2, .3, 1.3) .4s .05s;
+        }
+
+        // adding space between the three lines
+        .topLine{
+            bottom : 8px;
+        }
+
+        .bottomLine{
+            bottom: -8px;
+        }
+    }
+
+    // the items inside the nav bar -----------------------------------------------------
+    .nav-list{
+        // to make them appear from the left screen side I used translate X and moved them out of view
+        //and when the button is pressed, they come back to  their original location
+        transform: scaleY(0);
+        transform-origin: top;
+        z-index: -2;
+        background: $navList;
+        width: 100%;
+        height: 100vh;
+        list-style: none;
+        margin-top: 0;
+        padding: 0;
+        padding-top: 100px;
+        transition: all ease .4s;
+        li{
+            opacity: 0;
+            display: block;
+            margin: 0 40%;
+            position: relative;
+            transition: opacity .2s;
+            a{
+                padding: 20px 12%;
+                display: block;
+                font-size: 2rem;
+                color: #222;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+//when the button is pressed ---------------------------------------------------
+// added this "@media" to fix an issue with box shadow
+// if you open the menu, then make the screen bigger the menu would disappear but the box shadow wouldn't.
+//so i made sure the box shadow only appear if the screen is small.
+@media (max-width: 786px){
+.reveal{
+    z-index: 100;
+    .nav-list{
+        transform: scaleY(1);
+        box-shadow: 0px 2px 8px $navList;
+
+        li{
+            opacity: 1;
+            transition: opacity .4s ease-out .2s;
+        }
+    }
+
+
+// the animation that plays on the button to transform it into an X
+    .close{
+        .topLine{
+            transform: rotate(45deg);
+            bottom: -5px;
+        }
+
+        .bottomLine{
+            transform: rotate(-45deg);
+            bottom: 5px;
+        }
+
+        .middleLine{
+            opacity: 0;
+        }
+    }
+}
+}
+
+// makes the nav appear on top of everything
+.overlay{
+    z-index: 100;
+}
+
+// on bigger screens-----------------------------------------------------------------------
+@media (min-width: 786px){
+    nav{
+        height: 80px;
+        z-index: 100;
+
+        .cart{
+        top: 2rem;
+        right: 2rem;
+        }
+        .nav-logo{
+            top: 20px;
+            left: 20px;
+        }
+        //remove the button completely
+        .nav-button{
+            display: none;
+        }
+
+        .nav-list{
+            transform: translateX(0);
+            margin-left: 40%;
+            background: transparent;
+            height: 100%;
+            // making the list items appear next to each other, instead of on top of one another.
+            display: flex;
+            flex-direction: row;
+            padding-top: 5px;
+
+           li{
+               opacity: 1;
+                margin: 8px;
+                height: 40px;
+
+               a{
+                font-size: 1.8rem;
+                padding: 10px;
+                color: #444;
+                border-radius: 100px;
+                
+                &:hover{
+                    color: #000;
+                    }
+                }
+
+                //Adding a line under the currently active page.
+               .nav-active{
+                   font-weight: bold;
+                   color: #000;
+                &::after{
+                    content: '';
+                    display: block;
+                    height: 3px;
+                    width: 100%;
+                    transform: scaleX(0.8);
+                    border-radius: 10px;
+                    background: $blue;
+        
+                }
+               }
+           }
+        }
+    }
+}
