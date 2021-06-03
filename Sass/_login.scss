@@ -1,0 +1,155 @@
+
+.row{
+    margin: 0;
+}
+
+.wave{
+    transform: rotate(180deg) scaleY(1.3);
+    position: absolute;
+    top: 60px;
+    left:0;
+    width: 100%;
+    z-index: -1;
+}
+.wave-text{
+    position: absolute;
+    top: 70px;
+    left: 2rem;
+    letter-spacing: .4rem;
+    font-size: 3rem;
+    color: #eee;
+    font-family: 'Pattaya', sans-serif;
+}
+
+.login-container{
+    margin-top: 20vh;
+    padding: 0;
+
+    .login-block-col{
+        padding: 0;
+    }
+
+    .login-block{
+        display: none;
+    }
+
+    .login-form{
+        z-index: 1;
+        text-align: center;
+        width: 100%;
+        padding: 1rem;
+        margin-top: 20%;
+
+        form{
+            margin: 0 auto;
+            text-align: center;
+            height: 28rem;
+            width: 100%;
+            border-radius: 40px;
+        
+            #password, #email{
+                display: block;
+                border: none;
+                outline: none;
+                margin: 4rem auto;
+                background-color: transparent;
+                border-bottom: 2px solid #888;
+                width: 80%;
+                max-width: 24rem;
+                height: 2.5rem;
+                font-size: 1.2rem;
+                transition: all .2s ease-out;
+
+                &:hover, &:focus{
+                    border-bottom: 2px solid $blue;
+                }
+            }
+
+            #password-visibility{
+                display: none;
+            }
+
+            .password{
+                position: relative;
+                padding: 0;
+                max-width: 30rem;
+                margin: auto;
+            }
+            label{
+                font-size: 1.2rem;
+                position: absolute;
+                top: 5%;
+                right: 12%;
+                color: #555;
+
+                &:hover{
+                    color: #111;
+                    cursor: pointer;
+                }
+            }
+
+            input[type=submit]{
+                border: 2px solid $blue;
+                color: $blue;
+                border-radius: 100px;
+                outline: none;
+                width: 80%;
+                max-width:24rem;
+                padding: .4rem;
+                background: transparent;
+                font-size: 1.4rem;
+                transition: all .3s ease-out;
+                &:hover{
+                    background-color: $blue;
+                    color: #eee;
+                }
+            }
+            
+        }
+    }
+}
+
+@media(min-width: 786px){
+
+    .login-container{
+        border-radius: 100px;
+        height: 499px;
+        position: relative;
+        margin-top: 130px;
+        background: #eeeeee;
+        
+    }
+    .wave{
+        transform: rotate(90deg);
+        position: absolute;
+        top: 194px;
+        left: 90px;
+        width: 499px;
+        z-index: 1;
+    }
+
+    .login-block-col{
+        height: 100%;
+        width: 300px;
+        background: $blue;     
+        position: absolute;
+        top:0;
+        left:0;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        transform: rotate(0deg);
+    }
+    .wave-text{
+        z-index: 100;
+        color: #eee;
+        margin-top: 60px;
+        margin-left: 80px;
+        font-size: 6rem;
+    }
+    
+    .login-form{
+        margin-top: 100px !important;
+        width: 400px !important;
+        margin-left: 44%;
+    }
+}

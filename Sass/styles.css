@@ -45,7 +45,7 @@ nav .nav-logo {
   width: -moz-fit-content;
   width: fit-content;
   position: fixed;
-  top: 10px;
+  top: 14px;
   right: 20px;
   font-family: 'Pattaya', sans-serif;
   font-size: 3rem;
@@ -208,7 +208,7 @@ nav .nav-list li a {
     -webkit-transform: scaleX(0.8);
             transform: scaleX(0.8);
     border-radius: 10px;
-    background: #005a8d;
+    background: #0099FF;
   }
 }
 
@@ -222,7 +222,7 @@ nav .nav-list li a {
 }
 
 .header .header-block {
-  background: #005a8d;
+  background: #0099FF;
   position: absolute;
   top: 0;
   width: 100%;
@@ -265,7 +265,7 @@ nav .nav-list li a {
   border: none;
   border-radius: 100px;
   padding: 10px 22px;
-  background: #005a8d;
+  background: #0099FF;
   color: white;
   margin-top: 12px;
   cursor: pointer;
@@ -279,7 +279,7 @@ nav .nav-list li a {
     background: #ddd;
   }
   .header .header-block {
-    background: #005a8d;
+    background: #0099FF;
     width: 45%;
     height: 100%;
     position: absolute;
@@ -375,5 +375,163 @@ nav .nav-list li a {
 .footer .footer-contact .icons .fa-twitter:hover {
   color: #fff;
   background-color: #00AEEF;
+}
+
+.row {
+  margin: 0;
+}
+
+.wave {
+  -webkit-transform: rotate(180deg) scaleY(1.3);
+          transform: rotate(180deg) scaleY(1.3);
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.wave-text {
+  position: absolute;
+  top: 70px;
+  left: 2rem;
+  letter-spacing: .4rem;
+  font-size: 3rem;
+  color: #eee;
+  font-family: 'Pattaya', sans-serif;
+}
+
+.login-container {
+  margin-top: 20vh;
+  padding: 0;
+}
+
+.login-container .login-block-col {
+  padding: 0;
+}
+
+.login-container .login-block {
+  display: none;
+}
+
+.login-container .login-form {
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 20%;
+}
+
+.login-container .login-form form {
+  margin: 0 auto;
+  text-align: center;
+  height: 28rem;
+  width: 100%;
+  border-radius: 40px;
+}
+
+.login-container .login-form form #password, .login-container .login-form form #email {
+  display: block;
+  border: none;
+  outline: none;
+  margin: 4rem auto;
+  background-color: transparent;
+  border-bottom: 2px solid #888;
+  width: 80%;
+  max-width: 24rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.login-container .login-form form #password:hover, .login-container .login-form form #password:focus, .login-container .login-form form #email:hover, .login-container .login-form form #email:focus {
+  border-bottom: 2px solid #0099FF;
+}
+
+.login-container .login-form form #password-visibility {
+  display: none;
+}
+
+.login-container .login-form form .password {
+  position: relative;
+  padding: 0;
+  max-width: 30rem;
+  margin: auto;
+}
+
+.login-container .login-form form label {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 5%;
+  right: 12%;
+  color: #555;
+}
+
+.login-container .login-form form label:hover {
+  color: #111;
+  cursor: pointer;
+}
+
+.login-container .login-form form input[type=submit] {
+  border: 2px solid #0099FF;
+  color: #0099FF;
+  border-radius: 100px;
+  outline: none;
+  width: 80%;
+  max-width: 24rem;
+  padding: .4rem;
+  background: transparent;
+  font-size: 1.4rem;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.login-container .login-form form input[type=submit]:hover {
+  background-color: #0099FF;
+  color: #eee;
+}
+
+@media (min-width: 786px) {
+  .login-container {
+    border-radius: 100px;
+    height: 499px;
+    position: relative;
+    margin-top: 130px;
+    background: #eeeeee;
+  }
+  .wave {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    position: absolute;
+    top: 194px;
+    left: 90px;
+    width: 499px;
+    z-index: 1;
+  }
+  .login-block-col {
+    height: 100%;
+    width: 300px;
+    background: #0099FF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  .wave-text {
+    z-index: 100;
+    color: #eee;
+    margin-top: 60px;
+    margin-left: 80px;
+    font-size: 6rem;
+  }
+  .login-form {
+    margin-top: 100px !important;
+    width: 400px !important;
+    margin-left: 44%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
