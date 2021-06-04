@@ -1,0 +1,23 @@
+.about-container{
+    margin-top: 120px;
+    font-size: 1.4rem;
+    .row{
+        .col-lg-6, .col-12{
+            height: 90vh;
+            border: 2px solid blue;
+            
+            p{
+                margin-top: 50%;
+            }
+            img{
+                height: 100%;
+                width: 100%;
+            }
+
+        } 
+    }
+}
+
+@media(min-width: 786px){
+
+}

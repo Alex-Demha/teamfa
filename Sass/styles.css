@@ -534,4 +534,23 @@ nav .nav-list li a {
     margin-left: 44%;
   }
 }
+
+.about-container {
+  margin-top: 120px;
+  font-size: 1.4rem;
+}
+
+.about-container .row .col-lg-6, .about-container .row .col-12 {
+  height: 90vh;
+  border: 2px solid blue;
+}
+
+.about-container .row .col-lg-6 p, .about-container .row .col-12 p {
+  margin-top: 50%;
+}
+
+.about-container .row .col-lg-6 img, .about-container .row .col-12 img {
+  height: 100%;
+  width: 100%;
+}
 /*# sourceMappingURL=styles.css.map */
