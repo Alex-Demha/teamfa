@@ -540,13 +540,17 @@ nav .nav-list li a {
   font-size: 1.4rem;
 }
 
+.about-container .row {
+  margin: 10vh 0;
+}
+
 .about-container .row .col-lg-6, .about-container .row .col-12 {
-  height: 90vh;
+  height: 80vh;
   border: 2px solid blue;
 }
 
 .about-container .row .col-lg-6 p, .about-container .row .col-12 p {
-  margin-top: 50%;
+  margin-top: 30%;
 }
 
 .about-container .row .col-lg-6 img, .about-container .row .col-12 img {
