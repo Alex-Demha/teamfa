@@ -1,0 +1,21 @@
+.cart-container{
+    background-color: #ddd;
+    font-size: 1.4rem;;
+    margin-top: 100px;
+    max-width: none;
+    .cart-list{
+        list-style: none;
+        
+        .cart-item{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-around;
+            .cart-item-image{
+                height: 70px;
+                width: 70px;
+                border-radius: 12px;;
+            }
+        }
+    }   
+}

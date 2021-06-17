@@ -1,0 +1,191 @@
+.item-container {
+    margin-top: 120px;
+
+    .block {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 320px;
+        z-index: -10;
+        width: 100%;
+        background-color: $blue;
+        border-bottom-right-radius: 80px;
+        border-bottom-left-radius: 80px;
+    }
+
+    .row {
+
+        .col-sm-12,
+        .col-sm-2 {
+            img {
+                width: 95%;
+                
+                height: 300px;
+                margin-top: -20px;
+                margin-left: 2.5%;
+                border-radius: 60px;
+            }
+
+            .item-info {
+                position: relative;
+                top: 10%;
+
+                h3 {
+                    font-size: 2.2rem;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .colors {
+                margin-top: 8rem;
+                padding-left: 0rem;
+
+                .colors-list {
+                    text-align: left;
+                    margin-left: 0;
+                    display: flex;
+                    flex-direction: row;
+                    list-style: none;
+
+                    .color {
+                        outline: none;
+                        border: none;
+                        width: 28px;
+                        height: 28px;
+                        display: block;
+                        margin: 0 10px;
+                        border-radius: 6px;
+                        transition: all .2s ease-out;
+
+                        &:hover {
+                            cursor: pointer;
+                            transform: scale(1.1);
+                        }
+
+                        &:focus {
+                            box-shadow: 0 0 2px 3px $blue;
+                            transform: scale(1.1);
+                        }
+                    }
+
+                    .black {
+                        background: #222;
+                    }
+
+                    .green {
+                        background: green;
+                    }
+
+                    .blue {
+                        background: blue;
+                    }
+
+                    .red {
+                        background: red;
+                    }
+
+                    .yellow {
+                        background: yellow;
+                    }
+                }
+            }
+
+            .item-size {
+
+                max-width: 100px;
+                .dropdown-toggle {
+                    background: $blue;
+                    border: none;
+                    font-size: 1.6rem;
+                    border-radius: 6px;
+                    margin-top: 1.8rem;
+                    margin-left: 1.4rem;
+                    transform: scale(1.1);
+                }
+
+                .dropdown-menu {
+                    font-size: 1.4rem;
+                }
+
+            }
+
+            .buy-button {
+                padding: .8rem 2rem;
+                border-radius: 12px;
+                background-color: $blue;
+                border: none;
+                font-size: 1.8rem;
+                margin-top: -5rem;
+                margin-left: 15rem;
+                
+            }
+        }
+    }
+
+    
+}
+
+
+@media(min-width: 768px) {
+
+    .item-info {
+        top: 10% !important;
+        max-width: 400px;
+        margin-left: 2rem;
+    }
+
+    .item-container {
+
+        .block {
+            height: 500px;
+        }
+
+        .col-sm-12 {
+            img {
+                width: 100% !important;
+                height: 110% !important;
+                margin-left: 0 !important;
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) {
+
+    .item-container{
+        .block{
+            height: 600px;
+            width: 40% !important;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 80px;
+            border-top-right-radius: 100px;
+        }
+
+        .img-col{
+            margin-left: -50px !important; 
+            img{
+                margin-top: 20px !important;
+                width: 100% !important;
+                height: 100% !important;
+                margin-left: 0px !important; 
+                
+            }
+        }
+    }
+
+    .buy-button {
+        margin-top: 3.8rem !important;
+        margin-left: 1.4rem !important;
+    }
+    .item-size{
+        margin-left: 2.2rem;
+    }
+
+    .colors{
+        padding-left: 2.2rem !important;
+        margin-bottom: 2rem;
+    }
+}

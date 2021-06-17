@@ -36,6 +36,7 @@ nav{
         right: 20px;
         font-family: 'Pattaya', sans-serif;
         font-size: 3rem;
+        color: $blue;
     }
 // the nav button is the three lines (hamburger menu) 
     .nav-button{
@@ -111,7 +112,7 @@ nav{
 // added this "@media" to fix an issue with box shadow
 // if you open the menu, then make the screen bigger the menu would disappear but the box shadow wouldn't.
 //so i made sure the box shadow only appear if the screen is small.
-@media (max-width: 786px){
+@media (max-width: 768px){
 .reveal{
     z-index: 100;
     .nav-list{
@@ -150,7 +151,7 @@ nav{
 }
 
 // on bigger screens-----------------------------------------------------------------------
-@media (min-width: 786px){
+@media (min-width: 768px){
     nav{
         height: 80px;
         z-index: 100;
