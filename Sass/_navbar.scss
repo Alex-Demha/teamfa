@@ -29,6 +29,11 @@ nav{
         right: 17rem;
         top: 1rem;
     }
+
+    .cart-active{
+        background: $blue;
+        color: #eee;
+    }
     .nav-logo{
         width: fit-content;
         position: fixed;

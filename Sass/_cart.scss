@@ -1,7 +1,6 @@
 .cart-container {
     font-size: 1.4rem;
     margin-top: 120px;
-    max-width: none;
 
     .cart-list {
         list-style: none;
@@ -79,6 +78,10 @@
         font-size: 1.6rem;
         text-align: center;
         border-radius: 200px;
+        transition: all .3s ease;
+        &:focus{
+            box-shadow: 0 0 2px 4px $shadow-blue;
+        }
     }
     .purchase-container{
         margin-top: 2rem;

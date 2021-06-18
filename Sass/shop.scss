@@ -134,7 +134,7 @@ h4:hover {
         transition: all .3s ease;
 
         &:focus{
-            box-shadow: 0 0 2px 4px #98bddb;
+            box-shadow: 0 0 2px 4px $shadow-blue;
         }
         &:hover{
             cursor: pointer;

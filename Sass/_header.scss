@@ -5,7 +5,7 @@
     font-size: 1.4rem;
     height: 70vh;
     position: relative;
-    background-color: #ddd;
+    background-color: #eee;
     
     .header-block{
         background: $blue;
@@ -30,12 +30,12 @@
     }
 
     .header-text{
-    
         z-index: -1;
-        background: #ddd;
+        background: #eee;
         width: 100%;
         padding: 20px;
         transform: translateY(4.15vh);
+        margin-bottom: 2rem;;
         
         h3{
             font-family: 'Pattaya', sans-serif;
@@ -44,6 +44,8 @@
     }
 
     .header-btn{
+        display: block;
+        width: fit-content;
         outline: none;
         border: none;
         border-radius: 100px;
@@ -52,6 +54,12 @@
         color: white;
         margin-top: 12px;
         cursor: pointer;
+        text-decoration: none;
+        margin-top: 2rem !important;
+
+        &:focus{
+            box-shadow: 0 0 2px 4px $shadow-blue;
+        }
     }
 }
 @media(min-width: 786px){
@@ -59,7 +67,7 @@
     height: 80vh;
     margin-bottom:10vh;
     margin-top: 80px;
-    background: #ddd;
+    background: #eee;
     .header-block{
         background: $blue;
         width: 45%;

@@ -40,6 +40,11 @@ nav .cart {
   top: 1rem;
 }
 
+nav .cart-active {
+  background: #0099FF;
+  color: #eee;
+}
+
 nav .nav-logo {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -219,7 +224,7 @@ nav .nav-list li a {
   font-size: 1.4rem;
   height: 70vh;
   position: relative;
-  background-color: #ddd;
+  background-color: #eee;
 }
 
 .header .header-block {
@@ -249,11 +254,12 @@ nav .nav-list li a {
 
 .header .header-text {
   z-index: -1;
-  background: #ddd;
+  background: #eee;
   width: 100%;
   padding: 20px;
   -webkit-transform: translateY(4.15vh);
           transform: translateY(4.15vh);
+  margin-bottom: 2rem;
 }
 
 .header .header-text h3 {
@@ -262,6 +268,10 @@ nav .nav-list li a {
 }
 
 .header .header-btn {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   outline: none;
   border: none;
   border-radius: 100px;
@@ -270,6 +280,13 @@ nav .nav-list li a {
   color: white;
   margin-top: 12px;
   cursor: pointer;
+  text-decoration: none;
+  margin-top: 2rem !important;
+}
+
+.header .header-btn:focus {
+  -webkit-box-shadow: 0 0 2px 4px #98bddb;
+          box-shadow: 0 0 2px 4px #98bddb;
 }
 
 @media (min-width: 786px) {
@@ -277,7 +294,7 @@ nav .nav-list li a {
     height: 80vh;
     margin-bottom: 10vh;
     margin-top: 80px;
-    background: #ddd;
+    background: #eee;
   }
   .header .header-block {
     background: #0099FF;
@@ -878,7 +895,6 @@ nav .nav-list li a {
 .cart-container {
   font-size: 1.4rem;
   margin-top: 120px;
-  max-width: none;
 }
 
 .cart-container .cart-list {
@@ -958,6 +974,13 @@ nav .nav-list li a {
   font-size: 1.6rem;
   text-align: center;
   border-radius: 200px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.cart-container .purchase:focus {
+  -webkit-box-shadow: 0 0 2px 4px #98bddb;
+          box-shadow: 0 0 2px 4px #98bddb;
 }
 
 .cart-container .purchase-container {
