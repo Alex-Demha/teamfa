@@ -116,6 +116,19 @@ h4:hover {
   text-align: center;
 }
 
+.card .price-dis {
+  position: relative;
+  bottom: 10px;
+  border-radius: 10px;
+  padding: 8px;
+  padding-top: 0;
+  font-size: 1.4rem;
+  white-space: normal;
+  text-align: center;
+  text-decoration: line-through;
+  color: #b35454;
+}
+
 .card .add-to-cart {
   font-size: 1.4rem;
   border: none;
@@ -172,6 +185,8 @@ h4:hover {
     }
 } */
 .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 260px;
   height: 260px;
   margin: 20px;
@@ -233,6 +248,8 @@ h4:hover {
     display: none;
   }
   .card img {
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 90%;
     height: 100%;
   }

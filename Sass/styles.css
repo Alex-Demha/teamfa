@@ -40,11 +40,6 @@ nav .cart {
   top: 1rem;
 }
 
-nav .cart-active {
-  background: #0099FF;
-  color: #eee;
-}
-
 nav .nav-logo {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -259,7 +254,6 @@ nav .nav-list li a {
   padding: 20px;
   -webkit-transform: translateY(4.15vh);
           transform: translateY(4.15vh);
-  margin-bottom: 2rem;
 }
 
 .header .header-text h3 {
@@ -268,10 +262,6 @@ nav .nav-list li a {
 }
 
 .header .header-btn {
-  display: block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   outline: none;
   border: none;
   border-radius: 100px;
@@ -280,13 +270,6 @@ nav .nav-list li a {
   color: white;
   margin-top: 12px;
   cursor: pointer;
-  text-decoration: none;
-  margin-top: 2rem !important;
-}
-
-.header .header-btn:focus {
-  -webkit-box-shadow: 0 0 2px 4px #98bddb;
-          box-shadow: 0 0 2px 4px #98bddb;
 }
 
 @media (min-width: 786px) {
@@ -610,6 +593,31 @@ nav .nav-list li a {
 .carousel-item {
   overflow: hidden !important;
   max-height: 50% !important;
+}
+
+.titel-part {
+  text-align: center;
+}
+
+.titel-part button {
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.titel-part-trend {
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+.titel-part-trend button {
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .carousel {

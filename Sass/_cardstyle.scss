@@ -25,6 +25,28 @@
     overflow: hidden !important;
     max-height: 50% !important;
 }
+.titel-part{
+    text-align: center;
+    button{
+        padding: 2rem 3rem;
+        border-radius: 2rem;
+        border: none;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+.titel-part-trend{
+    text-align: center;
+    margin-bottom: 1.8rem;
+    button{
+        padding: 2rem 3rem;
+        border-radius: 2rem;
+        border: none;
+        font-size: 2rem;
+        font-weight: bold;
+       
+    }
+}
 .carousel{
    // width: 300px !important;
     width: 100%;

@@ -117,6 +117,21 @@ h4:hover {
         font-size: 1.4rem;
         white-space: normal;
         text-align: center;
+       
+
+    }
+    .price-dis{
+        position: relative;
+        bottom: 10px;
+        border-radius: 10px;
+        padding: 8px;
+        padding-top: 0;
+        font-size: 1.4rem;
+        white-space: normal;
+        text-align: center;
+        text-decoration: line-through;
+        color: rgb(179, 84, 84);
+       
 
     }
 
@@ -134,7 +149,7 @@ h4:hover {
         transition: all .3s ease;
 
         &:focus{
-            box-shadow: 0 0 2px 4px $shadow-blue;
+            box-shadow: 0 0 2px 4px #98bddb;
         }
         &:hover{
             cursor: pointer;
@@ -178,6 +193,7 @@ h4:hover {
 } */
 
 .card img {
+    object-fit: cover;
     width: 260px;
     height: 260px;
     margin: 20px;
@@ -244,6 +260,7 @@ h4:hover {
     }
 
     .card img{
+        object-fit: cover;
         width: 90%;
        height: 100%;
     }
