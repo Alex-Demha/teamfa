@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Jquery -->
+    <script src="Assets/JQuery/jquery-3.5.1.js"></script>
+
+    <!-- FontAwesome (for Icons) -->
+    <script src="https://kit.fontawesome.com/8b6fd05b4e.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Assets/Bootstrap/bootstrap.css">
+
+    <!-- Bootstrap JS -->
+    <script src="Assets/Bootstrap/bootstrap.js"></script>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="Sass/styles.css">
+    <title>Cart</title>
+</head>
+
+<body>
+
+    <!-- NavBar -->
+    <nav class="nav">
+        <h3 class="nav-logo">E-Commerce</h3>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+
+        <button class="nav-button"><span class="topLine"></span>
+            <span class="middleLine"></span>
+            <span class="bottomLine"></span></button>
+
+        <a href="" class="cart"> <i class="fas fa-shopping-cart"></i> </a>
+    </nav>
+
+
+    <div class="container cart-container">
+        <ul class="cart-list">
+            <li>
+                <div class="row cart-row">
+                    <div class="col-md-3 col-sm-12">
+                        <img src="Assets/Images/8.webp" alt="">
+                    </div>
+
+                    <div class="col-md-3 col-sm-del">
+                        <p class="cart-item-name">Item Name</p>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12">
+                        <div class="cart-item-count">
+                            <button class="add">+</button>
+                            <span class="count-num">1</span>
+                            <button class="sub">-</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12">
+                        <span class="dollar-sign">$</span><span class="cart-item-price">49.99</span>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="row cart-row">
+                    <div class="col-md-3 col-sm-12">
+                        <img src="Assets/Images/h6.jpg" alt="">
+                    </div>
+
+                    <div class="col-md-3 col-sm-del">
+                        <p class="cart-item-name">Item Name</p>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12">
+                        <div class="cart-item-count">
+                            <button class="add">+</button>
+                            <span class="count-num">1</span>
+                            <button class="sub">-</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12">
+                        <span class="dollar-sign">$</span><span class="cart-item-price">59.99</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="row">
+            <div class="col-12">
+                <div class="total-container">
+                <span class="total-text">Total:</span>
+                <span class="total-num">
+                <span class="dollar-sign">$</span><span class="total">100</span>
+                </span>
+            </div>
+            </div>
+
+            <div class="col-12 purchase-container">
+                <button class="purchase">Purchase</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
